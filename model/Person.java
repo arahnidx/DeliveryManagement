@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class Person {
-	private String Name, Email, Sex, Photo, Address;
-	private Date Birthdate;
-	private ArrayList<String> Phone = new ArrayList<String>();
+	protected String Name, Email, Sex, Photo, Address;
+	protected Date Birthdate;
+	protected ArrayList<String> Phone = new ArrayList<String>();
 	
 	public String getName() {
 		return Name;
