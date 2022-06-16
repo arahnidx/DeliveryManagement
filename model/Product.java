@@ -5,9 +5,9 @@ import java.util.ArrayList;
 
 public class Product {
 	
-	String Name;
-	float Price, Cost, Profit, TimeExpected;
-	ArrayList<String> Ingredients = new ArrayList<String>();
+	private String Name;
+	private float Price, Cost, Profit, TimeExpected;
+	private ArrayList<String> Ingredients = new ArrayList<String>();
 	
 	
 	

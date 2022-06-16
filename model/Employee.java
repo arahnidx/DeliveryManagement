@@ -6,10 +6,10 @@ import java.util.Date;
 
 
 public class Employee extends Person {
-	String Job;
-	int Shift;
-	float Salary;
-	Date Hiredate;
+	private String Job;
+	private int Shift;
+	private float Salary;
+	private Date Hiredate;
 	
 	
 	public Employee(String Name, String Email, String Sex, String Address, Date Birthdate, String Photo, ArrayList<String> Phone) {

@@ -2,7 +2,7 @@ package model;
 
 public class Customer extends Person{
 
-    float Credit;
+    private float Credit;
 
     public float getCredit() {
         return Credit;
