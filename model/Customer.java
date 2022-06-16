@@ -4,6 +4,7 @@ public class Customer extends Person{
 
     private float Credit;
     //
+    //
 
     public float getCredit() {
         return Credit;
