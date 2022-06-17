@@ -50,6 +50,11 @@ public class Person {
 	public void setPhone(ArrayList<String> phone) {
 		Phone = phone;
 	}
+	@Override
+	public String toString() {
+		return "Person [Address=" + Address + ", Birthdate=" + Birthdate + ", Email=" + Email + ", Name=" + Name
+				+ ", Phone=" + Phone + ", Photo=" + Photo + ", Sex=" + Sex + "]";
+	}
 
 	
 	

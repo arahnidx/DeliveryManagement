@@ -13,6 +13,11 @@ public class Customer extends Person{
         Credit = credit;
     }
 
+    @Override
+    public String toString() {
+        return "Customer [Credit=" + Credit + "]";
+    }
+
     
 
 }

@@ -66,6 +66,12 @@ public class Employee extends Person {
 	}
 
 
+	@Override
+	public String toString() {
+		return "Employee [Hiredate=" + Hiredate + ", Job=" + Job + ", Salary=" + Salary + ", Shift=" + Shift + "]";
+	}
+
+
 
 	
 	
