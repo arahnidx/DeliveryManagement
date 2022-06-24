@@ -5,82 +5,82 @@ import java.util.ArrayList;
 
 public class Product {
 	
-	private String Name;
-	private double Price, Cost, Profit, TimeExpected;
-	private ArrayList<String> Ingredients = new ArrayList<String>();
+	private String name;
+	private double price, cost, profit, timeExpected;
+	private ArrayList<String> ingredients = new ArrayList<String>();
 	
 	
 	
-	public Product(String Name, double Price, double Cost, double Profit, double TimeExpected, ArrayList<String> Ingredient) {
-		this.Name = Name;
-		this.Price = Price;
-		this.Cost = Cost;
-		this.Profit = Profit;
-		this.TimeExpected = TimeExpected;
+	public Product(String name, double price, double cost, double profit, double timeExpected, ArrayList<String> ingredients) {
+		this.name = name;
+		this.price = price;
+		this.cost = cost;
+		this.profit = profit;
+		this.timeExpected = timeExpected;
 		
-		for (String i : Ingredients) {
-			this.Ingredients.add(i);
+		for (String i : ingredients) {
+			this.ingredients.add(i);
 		}
 	}
 
 
 	public String getName() {
-		return Name;
+		return name;
 	}
 
 	public void setName(String name) {
-		Name = name;
+		this.name = name;
 	}
 
 	public double getPrice() {
-		return Price;
+		return price;
 	}
 
 	public void setPrice(double price) {
-		Price = price;
+		this.price = price;
 	}
 
 	public double getCost() {
-		return Cost;
+		return cost;
 	}
 
 	public void setCost(double cost) {
-		Cost = cost;
+		this.cost = cost;
 	}
 
 	public double getProfit() {
-		return Profit;
+		return profit;
 	}
 
 	public void setProfit(double profit) {
-		Profit = profit;
+		this.profit = profit;
 	}
 
 	public double getTimeExpected() {
-		return TimeExpected;
+		return timeExpected;
 	}
 
 	public void setTimeExpected(double timeExpected) {
-		TimeExpected = timeExpected;
+		this.timeExpected = timeExpected;
 	}
 
 	public ArrayList<String> getIngredients() {
-		return Ingredients;
+		return ingredients;
 	}
 
 	public void setIngredients(ArrayList<String> ingredients) {
-		Ingredients = ingredients;
+		this.ingredients = ingredients;
 	}
 
 	@Override
 	public String toString() {
 		return "Product{" +
-				"Name='" + Name + '\'' +
-				", Price=" + Price +
-				", Cost=" + Cost +
-				", Profit=" + Profit +
-				", TimeExpected=" + TimeExpected +
-				", Ingredients=" + Ingredients +
+				"name='" + name + '\'' +
+				", price=" + price +
+				", cost=" + cost +
+				", profit=" + profit +
+				", timeExpected=" + timeExpected +
+				", ingredients=" + ingredients +
 				'}';
 	}
 }

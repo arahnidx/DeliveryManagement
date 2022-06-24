@@ -4,56 +4,56 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class Person {
-	protected String Name, Email, Sex, Photo, Address;
-	protected Date Birthdate;
-	protected ArrayList<String> Phone = new ArrayList<String>();
+	protected String name, email, sex, photo, address;
+	protected Date birthdate;
+	protected ArrayList<String> phone = new ArrayList<String>();
 	
 	public String getName() {
-		return Name;
+		return name;
 	}
 	public void setName(String name) {
-		Name = name;
+		this.name = name;
 	}
 	public String getEmail() {
-		return Email;
+		return email;
 	}
 	public void setEmail(String email) {
-		Email = email;
+		this.email = email;
 	}
 	public String getSex() {
-		return Sex;
+		return sex;
 	}
 	public void setSex(String sex) {
-		Sex = sex;
+		this.sex = sex;
 	}
 	public String getPhoto() {
-		return Photo;
+		return photo;
 	}
 	public void setPhoto(String photo) {
-		Photo = photo;
+		this.photo = photo;
 	}
 	public String getAddress() {
-		return Address;
+		return address;
 	}
 	public void setAddress(String address) {
-		Address = address;
+		this.address = address;
 	}
 	public Date getBirthdate() {
-		return Birthdate;
+		return birthdate;
 	}
 	public void setBirthdate(Date birthdate) {
-		Birthdate = birthdate;
+		this.birthdate = birthdate;
 	}
 	public ArrayList<String> getPhone() {
-		return Phone;
+		return phone;
 	}
 	public void setPhone(ArrayList<String> phone) {
-		Phone = phone;
+		this.phone = phone;
 	}
 	@Override
 	public String toString() {
-		return "Person [Address=" + Address + ", Birthdate=" + Birthdate + ", Email=" + Email + ", Name=" + Name
-				+ ", Phone=" + Phone + ", Photo=" + Photo + ", Sex=" + Sex + "]";
+		return "Person [address=" + address + ", birthdate=" + birthdate + ", email=" + email + ", name=" + name
+				+ ", phone=" + phone + ", photo=" + photo + ", sex=" + sex + "]";
 	}
 
 	

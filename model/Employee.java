@@ -6,69 +6,69 @@ import java.util.Date;
 
 
 public class Employee extends Person {
-	private String Job;
-	private int Shift;
-	private float Salary;
-	private Date Hiredate;
+	private String job;
+	private int shift;
+	private double salary;
+	private Date hireDate;
 	
 	
-	public Employee(String Name, String Email, String Sex, String Address, Date Birthdate, String Photo, ArrayList<String> Phone) {
-		this.Name = Name;
-		this.Email = Email;
-		this.Sex = Sex;
-		this.Birthdate = Birthdate;
-		this.Address = Address;
-		this.Photo = Photo;
-		this.Hiredate = new Date();
-		for (String i : Phone){
-			this.Phone.add(i);
+	public Employee(String name, String email, String sex, String address, Date birthdate, String photo, ArrayList<String> phone) {
+		this.name = name;
+		this.email = email;
+		this.sex = sex;
+		this.birthdate = birthdate;
+		this.address = address;
+		this.photo = photo;
+		this.hireDate = new Date();
+		for (String i : phone){
+			this.phone.add(i);
 		}
 	}
 
 
 	public String getJob() {
-		return Job;
+		return job;
 	}
 
 
 	public void setJob(String job) {
-		Job = job;
+		this.job = job;
 	}
 
 
 	public int getShift() {
-		return Shift;
+		return shift;
 	}
 
 
 	public void setShift(int shift) {
-		Shift = shift;
+		this.shift = shift;
 	}
 
 
-	public float getSalary() {
-		return Salary;
+	public double getSalary() {
+		return salary;
 	}
 
 
 	public void setSalary(float salary) {
-		Salary = salary;
+		this.salary = salary;
 	}
 
 
-	public Date getHiredate() {
-		return Hiredate;
+	public Date getHireDate() {
+		return hireDate;
 	}
 
 
-	public void setHiredate(Date hiredate) {
-		Hiredate = hiredate;
+	public void setHireDate(Date hireDate) {
+		this.hireDate = hireDate;
 	}
 
 
 	@Override
 	public String toString() {
-		return "Employee [Hiredate=" + Hiredate + ", Job=" + Job + ", Salary=" + Salary + ", Shift=" + Shift + "]";
+		return "Employee [hireDate=" + hireDate + ", job=" + job + ", Salary=" + salary + ", shift=" + shift + "]";
 	}
 
 

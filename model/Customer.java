@@ -2,20 +2,20 @@ package model;
 
 public class Customer extends Person{
 
-    private float Credit;
+    private double credit;
     
 
-    public float getCredit() {
-        return Credit;
+    public double getCredit() {
+        return credit;
     }
 
     public void setCredit(float credit) {
-        Credit = credit;
+        this.credit = credit;
     }
 
     @Override
     public String toString() {
-        return "Customer [Credit=" + Credit + "]";
+        return "Customer [credit=" + credit + "]";
     }
 
     
