@@ -6,12 +6,12 @@ import java.util.ArrayList;
 public class Product {
 	
 	private String Name;
-	private float Price, Cost, Profit, TimeExpected;
+	private double Price, Cost, Profit, TimeExpected;
 	private ArrayList<String> Ingredients = new ArrayList<String>();
 	
 	
 	
-	public Product(String Name, float Price, float Cost, float Profit, float TimeExpected, ArrayList<String> Ingredient) {
+	public Product(String Name, double Price, double Cost, double Profit, double TimeExpected, ArrayList<String> Ingredient) {
 		this.Name = Name;
 		this.Price = Price;
 		this.Cost = Cost;
@@ -24,86 +24,63 @@ public class Product {
 	}
 
 
-
 	public String getName() {
 		return Name;
 	}
-
-
 
 	public void setName(String name) {
 		Name = name;
 	}
 
-
-
-	public float getPrice() {
+	public double getPrice() {
 		return Price;
 	}
 
-
-
-	public void setPrice(float price) {
+	public void setPrice(double price) {
 		Price = price;
 	}
 
-
-
-	public float getCost() {
+	public double getCost() {
 		return Cost;
 	}
 
-
-
-	public void setCost(float cost) {
+	public void setCost(double cost) {
 		Cost = cost;
 	}
 
-
-
-	public float getProfit() {
+	public double getProfit() {
 		return Profit;
 	}
 
-
-
-	public void setProfit(float profit) {
+	public void setProfit(double profit) {
 		Profit = profit;
 	}
 
-
-
-	public float getTimeExpected() {
+	public double getTimeExpected() {
 		return TimeExpected;
 	}
 
-
-
-	public void setTimeExpected(float timeExpected) {
+	public void setTimeExpected(double timeExpected) {
 		TimeExpected = timeExpected;
 	}
-
-
 
 	public ArrayList<String> getIngredients() {
 		return Ingredients;
 	}
 
-
-
 	public void setIngredients(ArrayList<String> ingredients) {
 		Ingredients = ingredients;
 	}
 
-
-
 	@Override
 	public String toString() {
-		return "Product [Cost=" + Cost + ", Ingredients=" + Ingredients + ", Name=" + Name + ", Price=" + Price
-				+ ", Profit=" + Profit + ", TimeExpected=" + TimeExpected + "]";
+		return "Product{" +
+				"Name='" + Name + '\'' +
+				", Price=" + Price +
+				", Cost=" + Cost +
+				", Profit=" + Profit +
+				", TimeExpected=" + TimeExpected +
+				", Ingredients=" + Ingredients +
+				'}';
 	}
-
-	
-	
-
 }
